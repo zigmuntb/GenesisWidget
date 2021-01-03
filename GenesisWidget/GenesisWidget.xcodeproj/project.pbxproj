@@ -13,7 +13,50 @@
 		435012EE25A200E10059EA0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435012ED25A200E10059EA0D /* Assets.xcassets */; };
 		435012F125A200E10059EA0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435012F025A200E10059EA0D /* Preview Assets.xcassets */; };
 		435012F425A200E10059EA0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435012F225A200E10059EA0D /* LaunchScreen.storyboard */; };
+		4350130325A201910059EA0D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4350130225A201910059EA0D /* WidgetKit.framework */; };
+		4350130525A201910059EA0D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4350130425A201910059EA0D /* SwiftUI.framework */; };
+		4350130825A201910059EA0D /* GenesisWidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350130725A201910059EA0D /* GenesisWidgetExtension.swift */; };
+		4350130B25A201930059EA0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4350130A25A201930059EA0D /* Assets.xcassets */; };
+		4350130D25A201930059EA0D /* GenesisWidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4350130925A201910059EA0D /* GenesisWidgetExtension.intentdefinition */; };
+		4350130E25A201930059EA0D /* GenesisWidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4350130925A201910059EA0D /* GenesisWidgetExtension.intentdefinition */; };
+		4350131125A201930059EA0D /* GenesisWidgetExtensionExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4350130025A201910059EA0D /* GenesisWidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4350131925A201FD0059EA0D /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350131825A201FD0059EA0D /* Provider.swift */; };
+		4350131A25A201FD0059EA0D /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350131825A201FD0059EA0D /* Provider.swift */; };
+		4350132825A2023B0059EA0D /* BatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350132525A2023B0059EA0D /* BatteryView.swift */; };
+		4350132925A2023B0059EA0D /* BatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350132525A2023B0059EA0D /* BatteryView.swift */; };
+		4350132A25A2023B0059EA0D /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350132625A2023B0059EA0D /* MediumWidgetView.swift */; };
+		4350132B25A2023B0059EA0D /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350132625A2023B0059EA0D /* MediumWidgetView.swift */; };
+		4350132C25A2023B0059EA0D /* SquareWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350132725A2023B0059EA0D /* SquareWidgetView.swift */; };
+		4350132D25A2023B0059EA0D /* SquareWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350132725A2023B0059EA0D /* SquareWidgetView.swift */; };
+		4350133325A2025B0059EA0D /* Courgette-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4350133225A2025B0059EA0D /* Courgette-Regular.ttf */; };
+		4350133425A2025B0059EA0D /* Courgette-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4350133225A2025B0059EA0D /* Courgette-Regular.ttf */; };
+		4350133825A202630059EA0D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350133725A202630059EA0D /* Constants.swift */; };
+		4350133925A202630059EA0D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4350133725A202630059EA0D /* Constants.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4350130F25A201930059EA0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 435012DC25A200DF0059EA0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 435012FF25A201910059EA0D;
+			remoteInfo = GenesisWidgetExtensionExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4350131525A201930059EA0D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4350131125A201930059EA0D /* GenesisWidgetExtensionExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		435012E425A200DF0059EA0D /* GenesisWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenesisWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +67,19 @@
 		435012F025A200E10059EA0D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		435012F325A200E10059EA0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		435012F525A200E10059EA0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4350130025A201910059EA0D /* GenesisWidgetExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GenesisWidgetExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4350130225A201910059EA0D /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		4350130425A201910059EA0D /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		4350130725A201910059EA0D /* GenesisWidgetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenesisWidgetExtension.swift; sourceTree = "<group>"; };
+		4350130925A201910059EA0D /* GenesisWidgetExtension.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = GenesisWidgetExtension.intentdefinition; sourceTree = "<group>"; };
+		4350130A25A201930059EA0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4350130C25A201930059EA0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4350131825A201FD0059EA0D /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		4350132525A2023B0059EA0D /* BatteryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryView.swift; sourceTree = "<group>"; };
+		4350132625A2023B0059EA0D /* MediumWidgetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediumWidgetView.swift; sourceTree = "<group>"; };
+		4350132725A2023B0059EA0D /* SquareWidgetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareWidgetView.swift; sourceTree = "<group>"; };
+		4350133225A2025B0059EA0D /* Courgette-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Courgette-Regular.ttf"; sourceTree = "<group>"; };
+		4350133725A202630059EA0D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +90,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		435012FD25A201910059EA0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4350130525A201910059EA0D /* SwiftUI.framework in Frameworks */,
+				4350130325A201910059EA0D /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				435012E625A200DF0059EA0D /* GenesisWidget */,
+				4350130625A201910059EA0D /* GenesisWidgetExtension */,
+				4350130125A201910059EA0D /* Frameworks */,
 				435012E525A200DF0059EA0D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				435012E425A200DF0059EA0D /* GenesisWidget.app */,
+				4350130025A201910059EA0D /* GenesisWidgetExtensionExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +143,56 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		4350130125A201910059EA0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4350130225A201910059EA0D /* WidgetKit.framework */,
+				4350130425A201910059EA0D /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4350130625A201910059EA0D /* GenesisWidgetExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4350133125A202500059EA0D /* Constants */,
+				4350133025A2024C0059EA0D /* Fonts */,
+				4350132425A2022F0059EA0D /* WidgetViews */,
+				4350130725A201910059EA0D /* GenesisWidgetExtension.swift */,
+				4350131825A201FD0059EA0D /* Provider.swift */,
+				4350130925A201910059EA0D /* GenesisWidgetExtension.intentdefinition */,
+				4350130A25A201930059EA0D /* Assets.xcassets */,
+				4350130C25A201930059EA0D /* Info.plist */,
+			);
+			path = GenesisWidgetExtension;
+			sourceTree = "<group>";
+		};
+		4350132425A2022F0059EA0D /* WidgetViews */ = {
+			isa = PBXGroup;
+			children = (
+				4350132525A2023B0059EA0D /* BatteryView.swift */,
+				4350132625A2023B0059EA0D /* MediumWidgetView.swift */,
+				4350132725A2023B0059EA0D /* SquareWidgetView.swift */,
+			);
+			path = WidgetViews;
+			sourceTree = "<group>";
+		};
+		4350133025A2024C0059EA0D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4350133225A2025B0059EA0D /* Courgette-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4350133125A202500059EA0D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4350133725A202630059EA0D /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,15 +203,34 @@
 				435012E025A200DF0059EA0D /* Sources */,
 				435012E125A200DF0059EA0D /* Frameworks */,
 				435012E225A200DF0059EA0D /* Resources */,
+				4350131525A201930059EA0D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4350131025A201930059EA0D /* PBXTargetDependency */,
 			);
 			name = GenesisWidget;
 			productName = GenesisWidget;
 			productReference = 435012E425A200DF0059EA0D /* GenesisWidget.app */;
 			productType = "com.apple.product-type.application";
+		};
+		435012FF25A201910059EA0D /* GenesisWidgetExtensionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4350131225A201930059EA0D /* Build configuration list for PBXNativeTarget "GenesisWidgetExtensionExtension" */;
+			buildPhases = (
+				435012FC25A201910059EA0D /* Sources */,
+				435012FD25A201910059EA0D /* Frameworks */,
+				435012FE25A201910059EA0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GenesisWidgetExtensionExtension;
+			productName = GenesisWidgetExtensionExtension;
+			productReference = 4350130025A201910059EA0D /* GenesisWidgetExtensionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -105,6 +242,9 @@
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					435012E325A200DF0059EA0D = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					435012FF25A201910059EA0D = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
@@ -123,6 +263,7 @@
 			projectRoot = "";
 			targets = (
 				435012E325A200DF0059EA0D /* GenesisWidget */,
+				435012FF25A201910059EA0D /* GenesisWidgetExtensionExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -134,7 +275,17 @@
 			files = (
 				435012F425A200E10059EA0D /* LaunchScreen.storyboard in Resources */,
 				435012F125A200E10059EA0D /* Preview Assets.xcassets in Resources */,
+				4350133325A2025B0059EA0D /* Courgette-Regular.ttf in Resources */,
 				435012EE25A200E10059EA0D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		435012FE25A201910059EA0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4350133425A2025B0059EA0D /* Courgette-Regular.ttf in Resources */,
+				4350130B25A201930059EA0D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,13 +296,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4350132825A2023B0059EA0D /* BatteryView.swift in Sources */,
+				4350132C25A2023B0059EA0D /* SquareWidgetView.swift in Sources */,
 				435012E825A200DF0059EA0D /* AppDelegate.swift in Sources */,
+				4350132A25A2023B0059EA0D /* MediumWidgetView.swift in Sources */,
 				435012EA25A200DF0059EA0D /* SceneDelegate.swift in Sources */,
 				435012EC25A200DF0059EA0D /* ContentView.swift in Sources */,
+				4350131925A201FD0059EA0D /* Provider.swift in Sources */,
+				4350130E25A201930059EA0D /* GenesisWidgetExtension.intentdefinition in Sources */,
+				4350133825A202630059EA0D /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		435012FC25A201910059EA0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4350130825A201910059EA0D /* GenesisWidgetExtension.swift in Sources */,
+				4350131A25A201FD0059EA0D /* Provider.swift in Sources */,
+				4350132B25A2023B0059EA0D /* MediumWidgetView.swift in Sources */,
+				4350132925A2023B0059EA0D /* BatteryView.swift in Sources */,
+				4350133925A202630059EA0D /* Constants.swift in Sources */,
+				4350130D25A201930059EA0D /* GenesisWidgetExtension.intentdefinition in Sources */,
+				4350132D25A2023B0059EA0D /* SquareWidgetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4350131025A201930059EA0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 435012FF25A201910059EA0D /* GenesisWidgetExtensionExtension */;
+			targetProxy = 4350130F25A201930059EA0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		435012F225A200E10059EA0D /* LaunchScreen.storyboard */ = {
@@ -284,6 +463,7 @@
 		435012F925A200E10059EA0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -305,6 +485,7 @@
 		435012FA25A200E10059EA0D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -318,6 +499,48 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ArsenkinBogdan.GenesisWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4350131325A201930059EA0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R7UFNAWC4M;
+				INFOPLIST_FILE = GenesisWidgetExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArsenkinBogdan.GenesisWidget.GenesisWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4350131425A201930059EA0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R7UFNAWC4M;
+				INFOPLIST_FILE = GenesisWidgetExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArsenkinBogdan.GenesisWidget.GenesisWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -340,6 +563,15 @@
 			buildConfigurations = (
 				435012F925A200E10059EA0D /* Debug */,
 				435012FA25A200E10059EA0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4350131225A201930059EA0D /* Build configuration list for PBXNativeTarget "GenesisWidgetExtensionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4350131325A201930059EA0D /* Debug */,
+				4350131425A201930059EA0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
