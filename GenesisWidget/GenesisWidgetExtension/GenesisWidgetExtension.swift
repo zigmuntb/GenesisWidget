@@ -13,12 +13,10 @@ struct GenesisWidgetExtensionEntryView : View {
     
     var body: some View {
         switch size {
-        case .systemSmall:
-            SquareWidget(entry: entry, isSmallWidget: true)
+        case .systemSmall, .systemLarge:
+            SquareWidget(entry: entry, widgetType: size)
         case .systemMedium:
             LongWidget(entry: entry)
-        case .systemLarge:
-            SquareWidget(entry: entry, isSmallWidget: false)
         @unknown default:
             Text("Unknown")
         }
@@ -44,14 +42,12 @@ struct WidgetView: View {
     
     var body: some View {
         switch size {
-        case .systemSmall:
-            SquareWidget(entry: entry, isSmallWidget: true)
+        case .systemSmall, .systemLarge:
+            SquareWidget(entry: entry, widgetType: size)
         case .systemMedium:
             LongWidget(entry: entry)
-        case .systemLarge:
-            SquareWidget(entry: entry, isSmallWidget: false)
         @unknown default:
-            Text("Unknown widget size")
+            Text("Unknown")
         }
     }
 }

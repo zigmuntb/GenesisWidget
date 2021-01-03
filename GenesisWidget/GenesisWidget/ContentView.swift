@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct ContentView: View {    
     var entry: Provider.Entry
@@ -16,7 +17,7 @@ struct ContentView: View {
                 VStack {
                     BackgroundImage(text: "Small widget")
                     
-                    SquareWidget(entry: entry, isSmallWidget: true)
+                    SquareWidget(entry: entry, widgetType: WidgetFamily.systemSmall)
                         .frame(width: 159, height: 159)
                         .cornerRadius(26)
                 }
@@ -32,7 +33,7 @@ struct ContentView: View {
                 VStack {
                     BackgroundImage(text: "Large widget")
                     
-                    SquareWidget(entry: entry, isSmallWidget: false)
+                    SquareWidget(entry: entry, widgetType: WidgetFamily.systemLarge)
                         .frame(width: 348, height: 357)
                         .cornerRadius(26)
                 }

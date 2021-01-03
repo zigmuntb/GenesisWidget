@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct SquareWidget: View {
     @Environment(\.colorScheme) var colorScheme
     
     var entry: Provider.Entry
-    let isSmallWidget: Bool
+    let widgetType: WidgetFamily
     
     var body: some View {
         ZStack {
@@ -24,13 +25,13 @@ struct SquareWidget: View {
                 
                 VStack {
                     Text(entry.hours)
-                        .font(.system(size: isSmallWidget ? 72 : 159.74, weight: .bold, design: .rounded))
+                        .font(.system(size: widgetType == .systemSmall ? 72 : 159.74, weight: .bold, design: .rounded))
                         .opacity(0.6)
                         .foregroundColor(.white)
                         .offset(y: 10)
                     
                     Text(entry.minutes)
-                        .font(.system(size: isSmallWidget ? 72 : 159.74, weight: .bold, design: .rounded))
+                        .font(.system(size: widgetType == .systemSmall ? 72 : 159.74, weight: .bold, design: .rounded))
                         .opacity(0.6)
                         .foregroundColor(.white)
                         .offset(y: -10)
@@ -41,11 +42,11 @@ struct SquareWidget: View {
                 VStack {
                     HStack {
                         Text(entry.currentDate)
-                            .font(.system(size: isSmallWidget ? 16 : 24, weight: isSmallWidget ? .semibold : .bold, design: .rounded))
+                            .font(.system(size: widgetType == .systemSmall ? 16 : 24, weight: widgetType == .systemSmall ? .semibold : .bold, design: .rounded))
                             .foregroundColor(.white)
                         Spacer()
                         
-                        if !isSmallWidget {
+                        if widgetType != .systemSmall {
                             BatteryView(batteryLevel: entry.batteryLife)
                                 .offset(x: -16)
                         }
@@ -53,7 +54,7 @@ struct SquareWidget: View {
                     
                     Spacer()
                     
-                    if isSmallWidget {
+                    if widgetType == .systemSmall {
                         HStack {
                             BatteryView(batteryLevel: entry.batteryLife)
                             Spacer()
@@ -61,15 +62,15 @@ struct SquareWidget: View {
                     }
                     HStack {
                         Text(entry.currentDay)
-                            .font(isSmallWidget ? K.Fonts.smallFont : K.Fonts.largeFont)
+                            .font(widgetType == .systemSmall ? K.Fonts.smallFont : K.Fonts.largeFont)
                             .tracking(-0.4)
                             .foregroundColor(.white)
                         Spacer()
                     }
                 }
                 Spacer()
-            }.padding(.leading, isSmallWidget ? 14 : 24)
-            .padding(.bottom, isSmallWidget ? 20 : 24)
+            }.padding(.leading, widgetType == .systemSmall ? 14 : 24)
+            .padding(.bottom, widgetType == .systemSmall ? 20 : 24)
             .padding(.top, 26)
             
         }
