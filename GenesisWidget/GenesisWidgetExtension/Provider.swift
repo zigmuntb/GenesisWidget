@@ -47,7 +47,7 @@ struct WidgetEntry: TimelineEntry {
 struct Provider: IntentTimelineProvider {
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<WidgetEntry>) -> Void) {
         let entryData = WidgetEntry()
-        let timeLine = Timeline(entries: [entryData], policy: .never)
+        let timeLine = Timeline(entries: [entryData], policy: .atEnd)
         
         completion(timeLine)
     }
